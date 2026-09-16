@@ -128,3 +128,7 @@ Check Java installation:
 
 ```bash
 java -version
+git clone https://github.com/priyansh-018/Java-Vityarthi.git
+cd Java-Vityarthi
+javac -d out src/studentmanagement/*.java
+java -cp out studentmanagement.Main
