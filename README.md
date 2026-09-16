@@ -112,3 +112,19 @@ The project uses:
 
 ```text
 data/students.txt
+```
+
+# Steps to Install and Run the Project
+
+## 1. Prerequisites
+
+Make sure the following are installed on your system:
+
+- Java JDK 8 or above
+- Git
+- Command Prompt / PowerShell / Terminal
+
+Check Java installation:
+
+```bash
+java -version
