@@ -1,83 +1,114 @@
 # Student Management System
 
-## Programming in Java - Evaluated Project
+## Project Overview
 
-A console-based Student Management System developed using Java. The project allows users to add, view, search, update, delete, sort, and manage student records through a command-line interface.
+The Student Management System is a Java-based command-line application developed to manage student records in a simple and organized way.
 
-Student information is stored in a local text file so that the data can be loaded again when the application is restarted.
+The system allows users to add, view, search, update, delete, and sort student records. It also provides grade calculation, input validation, and file-based data storage so that student information can be preserved between program executions.
 
----
+The project demonstrates important concepts of Programming in Java, including:
 
-## 1. Project Overview
-
-The Student Management System is designed to simplify the management of student records.
-
-The application provides a menu-driven interface through which the user can perform different operations on student data.
-
-### Main Operations
-
-- Add a new student
-- View all students
-- Search students by ID or name
-- Update student information
-- Delete student records
-- Calculate student grades
-- Sort students by name
-- Sort students by marks
-- Save student data to a file
-- Load previously saved data automatically
-
----
-
-## 2. Technologies Used
-
-- Java
-- Java Collections Framework
-- Java File Handling
 - Object-Oriented Programming
-- Exception Handling
-- Command Line / Terminal
-
-### Java Concepts Used
-
-This project demonstrates the following Java concepts:
-
 - Classes and Objects
-- Encapsulation
 - Inheritance
-- Polymorphism
-- Constructors
-- Methods
+- Encapsulation
 - ArrayList
-- Comparator
 - Exception Handling
-- File Input/Output
-- Loops
-- Conditional Statements
-- Packages
+- File Handling
+- Searching and Sorting
+- Input Validation
+- Modular Programming
+
+The application runs completely through the command line and does not require a graphical user interface or external database.
 
 ---
 
-## 3. Project Structure
+## Features
+
+### 1. Add Student
+
+Allows the user to add a new student by entering:
+
+- Student ID
+- Student Name
+- Age
+- Course
+- Email
+- Marks
+
+The system checks whether the Student ID already exists before adding the record.
+
+### 2. View All Students
+
+Displays all student records currently stored in the system.
+
+The displayed information includes:
+
+- Student ID
+- Name
+- Age
+- Course
+- Email
+- Marks
+- Grade
+
+### 3. Search Student
+
+Students can be searched using:
+
+- Student ID
+- Student Name
+
+The system displays the matching student records.
+
+### 4. Update Student
+
+Allows the user to modify the information of an existing student.
+
+The system first searches for the Student ID and then updates the required information.
+
+### 5. Delete Student
+
+Allows the user to remove an existing student record using the Student ID.
+
+### 6. Grade Calculation
+
+The system calculates a student's grade based on their marks.
+
+| Marks | Grade |
+|-------|-------|
+| 90 - 100 | A+ |
+| 80 - 89 | A |
+| 70 - 79 | B |
+| 60 - 69 | C |
+| 50 - 59 | D |
+| Below 50 | F |
+
+### 7. Sort Students
+
+The system provides sorting options for student records.
+
+Students can be sorted based on:
+
+- Name
+- Marks
+
+### 8. Input Validation
+
+The application validates user input to prevent invalid data.
+
+Examples include:
+
+- Invalid integer input
+- Invalid marks
+- Empty input
+- Invalid numeric values
+
+### 9. File-Based Data Storage
+
+Student records are stored in a text file so that the information can be loaded again when the application is started.
+
+The project uses:
 
 ```text
-Student-Management-System/
-│
-├── .vscode/
-│   └── settings.json
-│
-├── data/
-│   └── students.txt
-│
-├── src/
-│   └── studentmanagement/
-│       ├── Main.java
-│       ├── Person.java
-│       ├── Student.java
-│       ├── StudentManager.java
-│       ├── FileManager.java
-│       └── InputValidator.java
-│
-├── README.md
-├── .gitignore
-└── out/
+data/students.txt
